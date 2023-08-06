@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>FORMULARIO DE PRODUTOS NÃO CONFORME</h1>
+            
+            
+        
+            <img src="img/Ragtech-logo-87A0722095-seeklogo.com.png" alt="rgt">
+        </header>
+        
+        <section class="legend-section">
+            <legend class="first-legend" >REGISTRO DE PRODUTO NÃO CONFORME</legend>
+        </section>
+
+        <form target="_blank" id="my-form" method="post" autocomplete="off" action="https://formsubmit.co/fabiomartinsbatista@gmail.com">
+            <fieldset>
+                <div class="fieldset-wrapper">
+                
+                    <div class="tree-cols">
+                        <div class="input-wrapper">
+                            <label for="mentorship-date">
+                                Data <span>(DD/MM/AAAA)</span>
+                            </label>
+                            <input type="date" name="mentorship-date" id="mentorship-date" required>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="mentor-name">ESSAS INFORMAÇÕES SERAM ENVIADAS PARA</label>
+                            <select name="mentor-name" id="mentor-name">
+                                <option value="Debora">Debora</option>
+                                <option value="João">JOÃO PAULO</option>
+                                <option value="Mateus">ELAINE</option>
+                            </select>
+                        </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentorship-email">
+                            Email <span>(digite um email válido)</span>
+                        </label>
+                        <input type="email" name="mentorship-email" id="email" placeholder="digite seu e-mail aqui" required>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <legend>SETOR</legend>
+
+                    <label>
+                        <input type="radio" name="genero" value="masculino">
+                        TRANSFORMADORES
+                      </label>
+
+                      <label>
+                        <input type="radio" name="genero" value="masculino">
+                        PLACAS
+                      </label>
+                      <label>
+                        <input type="radio" name="genero" value="masculino">
+                        MONTAGEM FINAL
+                      </label>
+
+                      <div class="input-wrapper">
+                        <label for="mentorship-name">
+                        CÓDIGO DO ITEM NÃO CONFORME
+                        </label>
+                        <input type="text" name="mentorship-name" id="mentorship-name" placeholder="codigo não conforme aqui" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentorship-name">
+                        DESCRIÇÃO DO ITEM NÃO CONFORME
+                        </label>
+                        <input type="text" name="mentorship-name" id="mentorship-name" placeholder="descrição do item aqui" required>
+                    </div>
+
+                    <div class="input-wrapper">
+                        <label for="mentorship-name">
+                        NÃO CONFORMIDADE
+                        </label>
+                        <input type="text" name="mentorship-name" id="mentorship-name" placeholder="não conformidade aqui" required>
+                    </div>
+                </fieldset>
+
+
+                <fieldset>
+                    <div class="fieldset-wrapper">
+                        <legend>QUANTIDADE REPROVADA</legend>
+                         <label>
+                        <input type="radio" name="genero" value="masculino">
+                        PARCIAL
+                      </label> 
+                      <label>
+                      <input type="radio" name="genero" value="masculino">
+                      100%
+                    </label> 
+
+                    <div class="input-wrapper">
+                        <label for="mentor-feedback">
+                        OBSERVAÇÃO
+                        </label>
+                        <textarea name="mentor-feedback" id="mentor-feedback" cols="90" rows="10">
+                        </textarea>
+                    </div>
+
+                      <label for="imagem">SELECIONE A IMAGEM DA NÃO CONFORMIDADE</label>
+                       <input type="file" id="imagem" name="imagem">
+   
+                </div>
+            </fieldset>
+
+            <fieldset>
+               
+            </fieldset>
+        </form>
+
+        <footer>
+            <input form="my-form" type="submit" value="ENVIAR">
+        </footer>
+
+    </div>
+  
+</body>
+</html>
+    
