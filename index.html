@@ -114,11 +114,8 @@
 
                       <label  for="imagem">SELECIONE A IMAGEM DA NÃO CONFORMIDADE</label>
                        <input type="file" id="imagem" name="imagem">
-                       <button type="button" onclick="converterImagem()">Gerar PDF</button>
+                       
 
-                       <div id="receberImagem"></div>
-
-                       <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
                        
    
                 </div>
@@ -136,38 +133,7 @@
     </div>
 
     <script>
-        function converterImagem(){
-            //recebendo o arquivo
-           var arquivoEnviado = document.getElementById("imagem").files;
-           console.log(arquivoEnviado);
-
-           if(arquivoEnviado.length > 0){
-            var arquivoCarregado = arquivoEnviado[0];
-
-            var arquivoLer = new FileReader(); 
-
-            arquivoLer.onload = function(arquivoCarregadoEvento){
-                var imageBase64 = arquivoCarregadoEvento.target.result;
-                console.log(imageBase64);
-                
-                var novaImagem = document.createElement('img');
-                novaImagem.src = srcDados;
-
-                document.getElementById("receberImagem").innerHTML = novaImagem.outerHTML;
-
-
-               var doc = new jsPDF();
-
-               doc.text('foto da não conformidade', 15, 10);
-
-               doc.addImage(imageBase64, 'JPEG', 15, 30, 150, 78);
-
-               doc.save('produto.pdf')
-            }
-           }
-
-           arquivoLer.readAsDataURL(arquivoCarregado);
-        }
+     
 
     </script>
   
